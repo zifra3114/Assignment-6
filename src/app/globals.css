@@ -2,26 +2,371 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    height: 102px;
+}
+.logo{
+    width: 79px;
+    height: 41px;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+.logo Image{
+    width: 79px;
+    height: 41px;
+   
+}
+.header-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 15px;
+    padding-left: 150px;
+}
+.mainli{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+.main-page{
+    width: 100%;
+    height: 3300px;
+}
+.heading{
+    font-size: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+.project00{
+    color: grey;
+    letter-spacing: 2px;
+   
+    
+}
+.loerum{
+    font-weight: bolder;
+}
+.building{
+    width: 770px;
+    height: 829px;
+    position: absolute;
+    left: 480px;
+}
+.building Image{
+    width: 770px;
+    height: 829px;
+  
+}
+.about-page{
+    display: flex;
+    background-color: rgb(252, 250, 250);
+    height: 465px;
+    position: absolute;
+    top: 1000px;
+    left: 100px;
+    width: 1170px;
+}
+.about-heading{
+    font-size: 64px;
+    line-height: 40px;
+    color: rgb(192, 191, 191);
+    width: 168px;
+    height: 64px;
+    position: absolute;
+    right: 350px;
+    top: 30px;
+   
+}
+.about p{
+    font-size: 20px;
+    line-height: 20px;
+    width: 400px;
+    height: 200px;
+    height: 64px;
+    position: absolute;
+    right: 120px;
+    top: 120px;
+}
+.building1{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+}
+.building1 Image{
+    width: 270px;
+    height: 265px;
+}
+.building2{
+    position: absolute;
+    top: 55px;
+    left: 350px;
+}
+.building2 Image{
+    width: 270px;
+    height: 345px;
+}
+.building3{
+    position: absolute;
+    top: 330px;
+    left: 60px;
+}
+.building3 Image{
+    width: 270px;
+    height: 140px;
+}
+.main-focus{
+    position: absolute;
+    top: 1500px;
+    left: 100px;
+    width: 1170px;
+    height: 268px;
+}
+.mission{
+    font-size: 50px;
+    color: rgb(192, 191, 191);
+    
+}
+.mission-container{
+    display: flex;
+}
+.mission-container h1{
+    font-size: 165px;
+    color: rgb(192, 191, 191);
+}
+.mission-container p{
+    margin-top: 90px;
+    
+}
+.project-div{
+    width: 1170px;
+    height: 765px;
+    position:absolute;
+    top: 1850px;
+    left: 40px;
+}
+.project-div h1{
+    color: rgb(192, 191, 191);
+    font-size: 60px;
+}
+.project1{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+ .project1 Image{
+    width: 570px;
+    height: 255px;
+} 
+.project{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+ .project Image{
+    width: 570px;
+    height: 255px;
+} 
+.project2{
+    position: absolute;
+    top: 150px;
+    left: 650px;
+}
+.project2 Image{
+    width: 570px;
+    height: 255px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.project3{
+    position: absolute;
+    top: 450px;
+    left: 50px;
+}
+.project3 Image{
+    width: 570px;
+    height: 255px;
+}
+.project4{
+    position: absolute;
+    top: 450px;
+    left: 350px;
+}
+.project4 Image{
+    width: 570px;
+    height: 255px;
+}
+.project5{
+    position: absolute;
+    top: 450px;
+    left: 850px;
+}
+.project5 Image{
+    width: 570px;
+    height: 255px;
+}
+.project6{
+    position: absolute;
+    top: 700px;
+     right: 5px;
+}
+.read-more{
+position: absolute;
+top: 300px;
+left: 650px;
+}
+
+.contact-container{
+    width: 1170px;
+    height: 603px;
+    position: absolute;
+    top: 2700px;
+    left: 100px;
+}
+.contact-heading{
+    font-size: 60px;
+    color: rgb(192, 191, 191);
+}
+
+  .contact-containers form{
+   
+    width: 400px;
+    background-color: #ffffff;
+   
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .contact-containers input[type="text"],
+  .contact-containers input[type="email"],
+  .contact-containers input[type="number"],
+  .contact-containers textarea,
+  .contact-contaimers select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+     background-color: rgb(250, 245, 245);
+      box-sizing: border-box;
+      font-size: 16px;
   }
+  .contact-image{
+    position: absolute;
+    top: 100px;
+    left: 450px;
+  }
+  .contact-email{
+    margin-top: 50px;
+  }
+  .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo p {
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.footer-section-social-media a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.footer-section .social-media a:hover {
+    color: #999;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #222;
+    font-size: 14px;
+}
+.left-arrow{
+  
+    position: absolute;
+    top: 200px;
+}
+.right-arrow{
+  
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.number{
+  
+    position: absolute;
+    top: 400px;
+}
+
+.view{
+  
+    position: absolute;
+    top: 770px;
+    
+}
+
+  
+
